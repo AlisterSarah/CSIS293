@@ -1,1 +1,13 @@
-
+public class SongLyrics 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("Playing Games by Summer Walker!");
+        System.out.println("");
+        System.out.println("Whip, bought it");
+        System.out.println("Crib, got it");
+        System.out.println("Job, on it");
+        System.out.println("Did I ever ask you to take me to go shopping in Paris");
+        System.out.println("or go sailiing overseas and just drape me in Gucci? no");
+    }
+}
