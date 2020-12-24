@@ -1,0 +1,13 @@
+public class MovieQuoteInfo 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("Below I've listed a quote from one of my favorite movies!");
+        System.out.println("");
+        System.out.println("\"What do you get when you cross a mentally ill loner with a society that abandons him and treats him like trash? You get what you f**kin' deserve!\"");
+        System.out.println("");
+        System.out.println("Joker");
+        System.out.println("Arthur Fleck aka \"the Joker\"");
+        System.out.println("2019");
+    }
+}
