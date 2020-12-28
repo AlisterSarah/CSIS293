@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class DemoHorses {
+
+    public static void main(String[] args) {
+
+        Horse aHorse = new Horse();
+        RaceHorse aRaceHorse = new RaceHorse();
+
+        String DemoName;
+        String DemoColor;
+        String RaceDemoName;
+        String RaceDemoColor;
+        int DemoYear;
+        int RaceDemoYear;
+        int DemoRace;
+
+        Scanner input = new Scanner(System.in); // Horse
+        System.out.print("Enter the name of the horse >> ");
+        DemoName = input.nextLine();
+        aHorse.setColor(DemoName);
+        System.out.print("Enter the color of the horse >> ");
+        DemoColor = input.nextLine();
+        aHorse.setColor(DemoColor);
+        System.out.print("Enter the birth year of the horse >> ");
+        DemoYear = input.nextInt();
+        aHorse.setBirthYear(DemoYear);
+
+        System.out.print("Enter the name of the racehorse >> "); //Racehorse
+        RaceDemoName = input.nextLine();
+        aRaceHorse.setName(RaceDemoName);
+        System.out.print("Enter the color of the racehorse >> ");
+        RaceDemoColor = input.nextLine();
+        aRaceHorse.setColor(RaceDemoColor);
+        System.out.print("Enter the birth year of the racehorse >> ");
+        RaceDemoYear = input.nextInt();
+        aRaceHorse.setBirthYear(RaceDemoYear);
+        System.out.print("Enter the number of races the racehorse has completed >> ");
+        DemoRace = input.nextInt();
+        aRaceHorse.setRaces(DemoRace);
+
+        System.out.println(aHorse.getName() + " is " + aHorse.getColor() + " and was born in " + aHorse.getBirthYear());
+        System.out.println(aRaceHorse.getName() + " is " + aRaceHorse.getColor() + " and was born in " + aRaceHorse.getRaces());
+
+        input.close();
+
+    }
+}
