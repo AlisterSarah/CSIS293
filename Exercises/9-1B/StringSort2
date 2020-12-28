@@ -1,0 +1,32 @@
+import java.util.*; 
+public class StringSort2 
+{ 
+        public static void main(String[] arg) 
+        {
+        Scanner input = new Scanner(System.in);
+    int counter = 0;
+    String[] arr = new String[15];
+    String word = "";
+    System.out.println("Enter item or type 'zzz' to quit");
+    // arr[0] = input.nextLine();
+    // counter++;
+
+     do{     
+         //arr[counter] = input.nextLine();
+         word = input.nextLine();
+         if (!word.equals("zzz"))
+         { 
+             arr[counter] = word;
+             //System.out.println("bleh");
+        ++counter;
+         }
+         //++counter;
+
+     } while (!word.equals("zzz") && counter <= 14);
+        arr = Arrays.copyOf(arr, counter);
+        Arrays.sort(arr);
+        System.out.println("Array is " + Arrays.toString(arr));
+     //Arrays.sort(arr);
+     //System.out.println("Array is " + Arrays.toString(arr));
+    } 
+}
