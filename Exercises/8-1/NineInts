@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+//imported the scanner function
+
+public class NineInts
+
+//declared in Main class
+
+{
+
+public static void main(String[] args)
+
+//creates the main method
+
+{
+
+Scanner sc= new Scanner(System.in);
+
+// The Scanner function "sc" reads the input array values
+
+int arr[]= {10, 15, 19, 23, 26, 29, 31, 34, 38};
+
+//inserted the int values in array
+
+System.out.println("From first to last: ");
+
+//prints the message
+
+for(int i=0;i<arr.length;i++)
+
+// The i value is reading from 0 to length of array elements
+
+// and incrementing the values in ascending order
+
+System.out.print(arr[i]+" ");
+
+// printing the array values by making gap between each elements
+
+System.out.println("\n From last to first : ");
+
+//prints the message
+
+for(int i=arr.length-1;i>=0;i--)
+
+// The i value is reading the array elements to 0
+
+// and decrementing the values in descending order
+
+System.out.print(arr[i]+" ");
+
+
+
+}
+
+}
