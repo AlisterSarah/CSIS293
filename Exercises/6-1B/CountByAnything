@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class CountByAnything
+{
+public static void main(String[] args) 
+{
+      final int STOP = 500;
+      Scanner val = new Scanner(System.in);
+      System.out.println("Enter your value ");
+      int START =val.nextInt();
+      int j = 0;
+      for(int i = START; i <= STOP; i +=START)    
+      {
+          System.out.print(i + "  ");
+          j++;
+          if (j % 10 == 0)
+          {
+          System.out.println("");
+          }
+          val.close();
+          }
+}
+}
