@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class EvenOdd
+{
+   public static void main(String[] args) 
+   {
+      // Get the user input
+      Scanner input = new Scanner(System.in);
+      System.out.print("Enter an integer >> ");
+      int num = input.nextInt();
+      // Check if the input is correct ?
+
+      // Call your method and check the return value
+      if(isEven(num))
+         System.out.println("The integer entered is even.");
+      else
+         System.out.println("The integer entered is odd.");   
+   }
+
+   // And then your method is good
+   public static boolean isEven(int number)
+   {
+      // check if number is even
+      return (number % 2) == 0;
+   }
+}
